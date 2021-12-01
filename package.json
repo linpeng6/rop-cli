@@ -1,0 +1,28 @@
+{
+  "name": "rop-cli",
+  "version": "1.0.0",
+  "description": "脚手架演示",
+  "main": "index.js",
+  "bin": {
+    "rop": "./bin/www"
+  },
+  "scripts": {
+    "compile": "babel src -d dist",
+    "watch": "npm run compile -- --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "chalk": "^5.0.0",
+    "commander": "^8.3.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^8.2.0",
+    "ora": "^6.0.1"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}
