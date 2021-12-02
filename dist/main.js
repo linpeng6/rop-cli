@@ -3,6 +3,8 @@
 const program = require('commander');
 
 const create = require('../lib/create');
+
+const chalk = require('chalk');
 /**
  * 创建
  */
@@ -16,6 +18,6 @@ program.version('0.1.0').command('create <name>').option('-f, --force', 'overwri
  */
 
 program.on('--help', () => {
-  console.log(1);
+  console.log(`112${chalk.cyan('abc')}`);
 });
 program.parse();
